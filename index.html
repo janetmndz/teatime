@@ -1,57 +1,116 @@
+<!DOCTYPE html>
 <html>
 	<head>
+		<!---Website Information--->
 		<title> it's teatime </title>
-		<link rel="stylesheet" type="text/css" href="teatime.css">
-		<link rel="icon" href="leaf.png">
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="teatime.js"></script>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Janet Mendez">
+		<!---CSS file--->
+		<link rel="stylesheet" type="text/css" href="teatime.css">
+		<!---Favicon--->
+		<link rel="shortcut icon" href="images/leaf.png">
+		<!---Scripts--->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/teatime.js"></script>
+		
 	</head>
 	<body>
 		<div class="bodywrap">
+			<!---Share Features--->
 			<section class="teatime-info">
 				<div class="teatime-share">
 					<p>SHARE</p>
-					<div class="teatime-share-link"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//janetmndz.com"><img src="facebook.png"></a></div>
-					<div class="teatime-share-link"><a href="https://twitter.com/home?status=Check%20out%20this%20tea%20timer%20at%20http%3A//janetmndz.com%20!"><img src="twitter.png"></a></div>
+					<div class="teatime-share-link">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//janetmndz.com">
+							<img src="images/facebook.png">
+						</a>
+					</div>
+					<div class="teatime-share-link">
+						<a href="https://twitter.com/home?status=Check%20out%20this%20tea%20timer%20at%20http%3A//janetmndz.com%20!">
+							<img src="images/twitter.png">
+						</a>
+					</div>
 				</div>
 			</section>
+			<!---Full Teatimer Wrap--->
 			<div class= "teatime-main-wrap">
-
-			<section class="teatime-header">
-				<div class="teatime-logo">
-					<img src="teapottimer02.svg">
-					<h1>TEATIME</h1>
-				</div>
-			</section>
-
-			<section class="teatime-body">
-				<div class="teatime-hold">
-					<div class="teatime-view">
-						<div class="view-close">x</div>
-						<div class="view-timer">
-							<div class="timer-hold">
-							<p class= "teaname">You are currently brewing: <span id="teaname_place"></span></p>
-							<p class="teatimer"><span id="teatime_m"></span>:<span id="teatime_s"></span></p>
+				<!---Teatimer Header--->
+				<section class="teatime-header">
+					<div class="teatime-logo">
+						<img src="images/teapottimer02.svg">
+						<h1>TEATIME</h1>
+					</div>
+				</section>
+				<!---Teatimer Body--->
+				<section class="teatime-body">
+					<div class="teatime-hold">
+						<!---Overlay Teatimer Section--->
+						<div class="teatime-view">
+							<div class="view-close">x</div>
+							<div class="view-timer">
+								<div class="timer-hold">
+									<p class= "teaname">
+									You are currently brewing: <span id="teaname_place"></span>
+									</p>
+									<p class="teatimer">
+									<span id="teatime_m"></span>:<span id="teatime_s"></span>
+									</p>
+								</div>
 							</div>
 						</div>
+						<!---Teatimer Tea Selection--->
+						<div class="tea-selection" id="white">
+							<p>White</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">1 min</p>
+						</div>
+						<div class="tea-selection" id="green">
+							<p>Green</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">2 min</p>
+						</div>
+						<div class="tea-selection" id="black">
+							<p>Black</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">3 min</p>
+						</div>
+						<div class="tea-selection" id="darjeeling">
+							<p>Darjeeling</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">3 min</p>
+						</div>
+						<div class="tea-selection" id="oolong">
+							<p>Oolong</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">3 min</p>
+						</div>
+						<div class="tea-selection" id="prueh">
+							<p>Prueh</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">4 min</p>
+						</div>
+						<div class="tea-selection" id="herbal">
+							<p>Herbal</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">5 min</p>
+						</div>
+						<div class="tea-selection" id="roobios">
+							<p>Roobios</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">5 min</p>
+						</div>
+						<div class="tea-selection" id="mate">
+							<p>Mate</p>
+							<img src="images/leaf02.svg">
+							<p class="tea-time">6 min</p>
+						</div>
 					</div>
-					<div class="tea-selection" id="white"><p>White</p><img src="leaf02.svg"><p class="tea-time">1 min</p></div>
-					<div class="tea-selection" id="green"><p>Green</p><img src="leaf02.svg"><p class="tea-time">2 min</p></div>
-					<div class="tea-selection" id="black"><p>Black</p><img src="leaf02.svg"><p class="tea-time">3 min</p></div>
-					<div class="tea-selection" id="darjeeling"><p>Darjeeling</p><img src="leaf02.svg"><p class="tea-time">3 min</p></div>
-					<div class="tea-selection" id="oolong"><p>Oolong</p><img src="leaf02.svg"><p class="tea-time">3 min</p></div>
-					<div class="tea-selection" id="prueh"><p>Prueh</p><img src="leaf02.svg"><p class="tea-time">4 min</p></div>
-					<div class="tea-selection" id="herbal"><p>Herbal</p><img src="leaf02.svg"><p class="tea-time">5 min</p></div>
-					<div class="tea-selection" id="roobios"><p>Roobios</p><img src="leaf02.svg"><p class="tea-time">5 min</p></div>
-					<div class="tea-selection" id="mate"><p>Mate</p><img src="leaf02.svg"><p class="tea-time">6 min</p></div>
-				</div>
-			</section>
-
-			<a id="credit-link" href="http://janetmndz.com" target="_blank">&copy; Janet Mendez 2016</a>
+				</section>
+				<!---Credits --->
+				<a id="credit-link" href="http://janetmndz.com" target="_blank">&copy; Janet Mendez 2016</a>
 			</div>
 		</div>
 	</body>
-	
 </html>
